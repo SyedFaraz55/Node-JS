@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>Page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div id="brand">
+          <span id="blogger">Blogger</span>
+        </div>
+        <div id="left-nav">
+          <a href="/">Home</a>
+          <a href="/create">Create Post</a>
+        </div>
+      </nav>
+
+      <section>
+        <div class="container">
+          <% for(let i=0; i<dataMongo.length; i++ ) {%>
+            <div class="postbody">
+              <div class="post">
+                <h1><%= dataMongo[i].title%></h1>
+                <div class="body">
+                  <p><%= dataMongo[i].body%></p>
+                  <small> <%= dataMongo[i].date%> | <%= dataMongo[i].author%></small>
+                </div>
+              </div>
+              <div style="margin-bottom:20px"></div>
+            </div>
+            <%}%>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+  padding:0;
+  background-color: #f4f4f4;
+}
+.container{
+  width: 50%;
+  margin:30px auto;
+}
+.post {
+
+  background-color: white;
+  padding:14px;
+  border-radius: 4px;
+  border-left: 6px solid coral;
+}
+.body{
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+small {
+  color: grey;
+}
+nav {
+  display: flex;
+  padding: 10px;
+  background-color: #2e89ba;
+  justify-content: center;
+  justify-content: space-around;
+}
+#blogger {
+  font-size: 1.5rem;
+  color: white;
+}
+nav a {
+  text-decoration: none;
+  padding:10px;
+  color: white;;
+  font-size: 1.5rem;
+
+}
