@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>Page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div id="brand">
+            <span id="blogger">Blogger</span>
+          </div>
+          <div id="left-nav">
+            <a href="/">Home</a>
+          </div>
+        </nav>
+
+      <section>
+        <div class="container">
+          <div></div>
+          <form action="/create" method="post">
+            <input type="text" name="title" placeholder="Post title" required>
+            <input type="text" name="author" placeholder="Post title" required>
+            <input type="date" name="date" required>
+            <textarea name="description" rows="8" cols="80" placeholder="Description" required></textarea>
+            <input type="submit" name="" value="submit">
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

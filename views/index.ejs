@@ -19,13 +19,13 @@
 
       <section>
         <div class="container">
-          <% for(let i=0; i<dataMongo.length; i++ ) {%>
+          <% for(let i=0; i<data.length; i++ ) {%>
             <div class="postbody">
               <div class="post">
-                <h1><%= dataMongo[i].title%></h1>
+                <h1><%= data[i].title%></h1>
                 <div class="body">
-                  <p><%= dataMongo[i].body%></p>
-                  <small> <%= dataMongo[i].date%> | <%= dataMongo[i].author%></small>
+                  <p><%= data[i].body%></p>
+                  <small> <%= data[i].date%> | <%= data[i].author%></small>
                 </div>
               </div>
               <div style="margin-bottom:20px"></div>
